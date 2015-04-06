@@ -1,5 +1,5 @@
 <?php
-
+namespace optimization_reporter\lib;
 /*
  * Service_WTF_Test
  *

@@ -18,3 +18,15 @@
  * Author URI: http://justinvoelkel.me
  * License: GPL2
  */
+
+namespace optimization_reporter;
+
+if (!defined('WPINC')) {
+    die;
+}
+
+require_once 'vendor/autoload.php';
+require_once 'src/Optimization_Reporter.php';
+
+$plugin = new Optimization_Reporter();
+$plugin->run();
