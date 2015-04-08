@@ -7,6 +7,7 @@
  */
 
 namespace optimization_reporter\Admin;
+use optimization_reporter\Views\Loader\View;
 
 
 class Optimization_Reporter_Admin {
@@ -17,13 +18,13 @@ class Optimization_Reporter_Admin {
             add_options_page( 'WP Optimization Reporter Options', 'WP Optimization Reporter', 'manage_options', 'wp-optimization-reporter', array($this,'plugin_options') );
         }
 
-        public function plugin_options() {
-            if ( !current_user_can( 'manage_options' ) )  {
-                wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
+        public function plugin_options()
+        {
+            if (!current_user_can('manage_options')) {
+                wp_die(__('You do not have sufficient permissions to access this page.'));
             }
-            ?>
-        <h1>WP Optimization Reporter</h1>
-        <?php
-
+            //load admin template
+            $view = new View('Admin');
+            $view->load();
         }
 }
