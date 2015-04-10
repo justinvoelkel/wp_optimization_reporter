@@ -15,7 +15,9 @@
     <!-- Tab panes -->
     <div class="tab-content">
         <div role="tabpanel" class="tab-pane active" id="home">test1</div>
-        <div role="tabpanel" class="tab-pane" id="GPI">2</div>
+        <div role="tabpanel" class="tab-pane" id="GPI">
+            <?php require_once __DIR__.'/GooglePageSpeed.php' ?>
+        </div>
         <div role="tabpanel" class="tab-pane" id="pingdom">3</div>
         <div role="tabpanel" class="tab-pane" id="gtmetrix">4</div>
     </div>
