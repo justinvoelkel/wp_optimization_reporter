@@ -23,9 +23,9 @@ class Optimization_Reporter_Admin {
             if (!current_user_can('manage_options')) {
                 wp_die(__('You do not have sufficient permissions to access this page.'));
             }
-            $var = 'this is a test var';
+
             //load admin template
-            $view = new View('Admin',$var);
+            $view = new View('Admin');
             $view->load();
         }
 }

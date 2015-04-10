@@ -13,7 +13,7 @@ class View {
     protected $view;
     protected $args;
 
-    public function __construct($view,$args){
+    public function __construct($view,$args = null){
         $this->view = $view;
         $this->args = $args;
     }
