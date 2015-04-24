@@ -19,7 +19,6 @@ class View {
     }
 
     public function load(){
-        $args = $this->args;
         if(file_exists(__DIR__.'/../'.$this->view.'.php'))
         {
             require_once __DIR__.'/../'. $this->view .'.php';
