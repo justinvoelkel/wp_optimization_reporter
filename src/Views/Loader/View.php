@@ -8,19 +8,20 @@
 
 namespace optimization_reporter\Views\Loader;
 
-
-class View {
+class View
+{
     protected $view;
     protected $args;
 
-    public function __construct($view,$args = null){
+    public function __construct($view, $args = null)
+    {
         $this->view = $view;
         $this->args = $args;
     }
 
-    public function load(){
-        if(file_exists(__DIR__.'/../'.$this->view.'.php'))
-        {
+    public function load()
+    {
+        if (file_exists(__DIR__.'/../'.$this->view.'.php')) {
             require_once __DIR__.'/../'. $this->view .'.php';
         }
     }
