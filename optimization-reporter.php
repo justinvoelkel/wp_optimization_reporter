@@ -28,5 +28,5 @@ if (!defined('WPINC')) {
 require_once 'vendor/autoload.php';
 require_once 'src/Optimization_Reporter.php';
 
-$plugin = new Optimization_Reporter();
+$plugin = new OptimizationReporter();
 $plugin->run();

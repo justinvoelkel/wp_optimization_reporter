@@ -9,11 +9,12 @@ namespace optimization_reporter;
 
 use optimization_reporter\Admin\OptimizationReporterAdmin as Admin;
 
-class Optimization_Reporter
+class OptimizationReporter
 {
     private $admin;
 
-    public function run (){
+    public function run()
+    {
         $this->admin = new Admin();
     }
 }
